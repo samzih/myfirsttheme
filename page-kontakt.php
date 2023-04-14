@@ -4,6 +4,7 @@
     <section>
         <div class="container">
             <div class="row">
+
                 <div class="col-xs-12 col-md-8 col-md-offset-2">
                     <h1><?php wp_title(''); ?></h1>
                     <form>
@@ -16,6 +17,7 @@
                         <input type="submit" value="Skicka" />
                     </form>
                 </div>
+                
             </div>
         </div>
     </section>
