@@ -33,6 +33,6 @@ add_action('wp_enqueue_scripts', 'load_css');
 // loads the misc javascript files
 function load_js(){
     wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.js');
-    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', 'jquery', false, true);
+    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', '', false, true);
 }
 add_action('wp_enqueue_scripts', 'load_js');
