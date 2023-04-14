@@ -9,6 +9,18 @@ function theme_support(){
 add_action('after_setup_theme', 'theme_support');
 
 
+// navigation menu(s) that can be controlled via the WordPress admin panel
+function menus(){
+    register_nav_menus(
+        array(
+            'top-menu' => 'Top Menu Location',
+            'side-menu' => 'Side Menu Location',
+        )
+    );
+}
+add_action('init', 'menus');
+
+
 // loads the misc css styling files
 function load_css(){
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
