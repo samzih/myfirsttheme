@@ -37,3 +37,96 @@ function load_js(){
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', '', false, true);
 }
 add_action('wp_enqueue_scripts', 'load_js');
+
+
+// register the sidebar widgets
+function sidebar_widgets()
+{
+	register_sidebar(array(
+		'name' => 'Sidebar Widget Area 1',
+		'id' => 'sidebar-widget-area-1',
+		'description' => '',
+		'before_widget' => '<ul><li>',
+		'after_widget' => '</li></ul>',
+		'before_title' => '',
+		'after_title'=> '',
+	));
+
+	register_sidebar(array(
+		'name' => 'Sidebar Widget Area 2',
+		'id' => 'sidebar-widget-area-2',
+		'description' => '',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title'=> '',
+	));
+
+	register_sidebar(array(
+		'name' => 'Sidebar Widget Area 3',
+		'id' => 'sidebar-widget-area-3',
+		'description' => '',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title'=> '',
+	));
+
+	register_sidebar(array(
+		'name' => 'Sidebar Widget Area 4',
+		'id' => 'sidebar-widget-area-4',
+		'description' => '',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title'=> '',
+	));
+}
+add_action('widgets_init', 'sidebar_widgets');
+
+
+// register the footer widgets
+function footer_widgets()
+{
+	register_sidebar(array(
+		'name' => 'Footer Widget Area 1',
+		'id' => 'footer-widget-area-1',
+		'description' => 'Widgets added here will appear in the first column of the footer.',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Widget Area 2',
+		'id' => 'footer-widget-area-2',
+		'description' => 'Widgets added here will appear in the second column of the footer.',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Widget Area 3',
+		'id' => 'footer-widget-area-3',
+		'description' => 'Widgets added here will appear in the third column of the footer.',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		'class' => 'social',
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Widget Area 4',
+		'id' => 'footer-widget-area-4',
+		'description' => 'Widgets added here will appear in the fourth column of the footer.',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));
+}
+add_action('widgets_init', 'footer_widgets');
