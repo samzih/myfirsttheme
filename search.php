@@ -9,9 +9,10 @@
                     <h1>Sökresultat för: <?php the_search_query(); ?></h1>
 
                     <div class="searchform-wrap">
-                        <!-- <form id="searchform" class="searchform"> -->
+                        <form id="searchform" class="searchform">
+                            <label for="s">Sök efter:</label>
                             <?php get_search_form() ?>
-                        <!-- </form> -->
+                        </form>
                     </div>
 
                     <?php
