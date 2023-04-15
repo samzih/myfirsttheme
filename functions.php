@@ -15,6 +15,7 @@ function menus(){
         array(
             'top-menu' => 'Top Menu Location',
             'side-menu' => 'Side Menu Location',
+            //'socials-menu' => 'Bottom Social Media Menu Location'
         )
     );
 }
