@@ -45,17 +45,15 @@
         <nav id="nav">
             <div class="container">
                 <div class="row">
+
                     <div class="col-xs-12">
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'top-menu',
-                                'menu_class' => 'menu',
-                                'container' => 'true',
-                            )
-                        );
-                        ?>
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'top-menu',
+                            'menu_class' => 'menu',
+                            'container' => 'true',
+                        )); ?>
                     </div>
+                    
                 </div>
             </div>
         </nav>
