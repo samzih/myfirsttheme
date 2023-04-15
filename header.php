@@ -41,9 +41,10 @@
         <div class="mobile-search">
             <form id="searchform" class="searchform">
                 <div>
-                    <label class="screen-reader-text">Sök efter:</label>
+                    <?php get_search_form(); ?>
+                    <!-- <label class="screen-reader-text">Sök efter:</label>
                     <input type="text" />
-                    <input type="submit" value="Sök" />
+                    <input type="submit" value="Sök" /> -->
                 </div>
             </form>
         </div>
