@@ -10,7 +10,6 @@
 
                     <div class="searchform-wrap">
                         <form id="searchform" class="searchform">
-                            <label for="s">Sök efter:</label>
                             <?php get_search_form() ?>
                         </form>
                     </div>
