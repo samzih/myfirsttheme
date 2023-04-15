@@ -20,9 +20,7 @@
                     </div>
 
                     <div class="col-sm-6 hidden-xs">
-                        <form id="searchform" class="searchform">
-                            <?php get_search_form(); ?>
-                        </form>
+                        <?php get_search_form(); ?>
                     </div>
 
                     <div class="col-xs-4 text-right visible-xs">
@@ -37,9 +35,7 @@
         </header>
 
         <div class="mobile-search">
-            <form id="searchform" class="searchform">
-                <?php get_search_form(); ?>
-            </form>
+            <?php get_search_form(); ?>
         </div>
 
         <nav id="nav">
@@ -53,7 +49,7 @@
                             'container' => 'true',
                         )); ?>
                     </div>
-                    
+
                 </div>
             </div>
         </nav>
