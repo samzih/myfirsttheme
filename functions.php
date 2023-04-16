@@ -46,8 +46,8 @@ function sidebar_widgets()
 		'name' => 'Sidebar Widget Area 1',
 		'id' => 'sidebar-widget-area-1',
 		'description' => '',
-		'before_widget' => '<ul><li>',
-		'after_widget' => '</li></ul>',
+		'before_widget' => '',
+		'after_widget' => '',
 		'before_title' => '',
 		'after_title'=> '',
 	));
