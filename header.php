@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?></title>
-    <?php wp_head(); ?> <!-- injects various content (scripts, stylesheets & more) into the head section -->
+    <!-- injects various content (scripts, stylesheets & more) into the head section -->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -42,6 +43,7 @@
             <div class="container">
                 <div class="row">
 
+                    <!-- Displays the navigation menu -->
                     <div class="col-xs-12">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'top-menu',

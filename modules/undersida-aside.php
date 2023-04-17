@@ -1,3 +1,5 @@
+<!-- Aside template part for "undersida" pages -->
+
 <ul class="side-menu">
     <?php wp_nav_menu(array(
         'theme_location' => 'side-menu',

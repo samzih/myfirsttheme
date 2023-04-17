@@ -19,7 +19,8 @@
     </div>
 </footer>
 
-<?php wp_footer(); ?> <!-- injects various content (scripts, stylesheets & more) into the footer section -->
+<!-- injects various content (scripts, stylesheets & more) into the footer section -->
+<?php wp_footer(); ?>
 </body>
 
 </html>
